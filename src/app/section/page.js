@@ -2,24 +2,26 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="p-4">
+    <nav className="p-10">
       <div className="flex justify-center">
         <ul className="flex space-x-4">
           <li>
             <Link href="/inicio">
-              <p className="text-base font-bold">PRACTICA</p>
+              <p className=" text-2xl font-bold hover: bg-blend-color">
+                PRACTICA
+              </p>
             </Link>
           </li>
           <li>
             <Link href="/acerca">
-              <p className="text-base font-bold">QUIZ</p>
+              <p className="text-2xl font-bold">QUIZ</p>
             </Link>
           </li>
           <li>
             <Link href="/play">
               <svg
-                width="30"
-                height="30"
+                width="35"
+                height="35"
                 viewBox="0 0 40 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,12 +46,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/contacto">
-              <p className="text-base font-bold">CONTACTO</p>
+              <p className="text-2xl font-bold">CONTACTO</p>
             </Link>
           </li>
           <li>
             <Link href="/mas">
-              <p className="text-base font-bold">MAS</p>
+              <p className="text-2xl font-bold">MAS</p>
             </Link>
           </li>
         </ul>

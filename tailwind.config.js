@@ -19,6 +19,7 @@ module.exports = {
       primary: "#FCF932",
       second: "#3475D7",
       complement: "#FFFFFF",
+      complement2: "#777777c7",
     },
     fontFamily: {
       pop: ["Poppins", "sans-serif"],

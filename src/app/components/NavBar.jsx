@@ -3,11 +3,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = ({ togglePlayer }) => {
+  const [navbarVisible, setNavbarVisible] = useState(false);
+
   return (
-    <nav className="p-10">
-      <div className="flex justify-center">
+    <nav className="p-4 md:p-10  ">
+      <div className="flex justify-around">
         <motion.div
-          className="brand"
           initial={{ opacity: 0, y: -25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -15,21 +16,25 @@ const Navbar = ({ togglePlayer }) => {
             ease: "easeInOut",
           }}
         >
-          <ul className="flex space-x-4">
+          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ">
             <li>
-              <Link href="/#inicio">
-                <p className=" text-2xl font-bold hover: bg-blend-color">
-                  PRACTICA
-                </p>
+              <Link
+                href="/#inicio"
+                className="text-xl md:text-2xl font-bold hover:bg-blend-color"
+              >
+                PRACTICA
               </Link>
             </li>
             <li>
-              <Link href="/#acerca">
-                <p className="text-2xl font-bold">QUIZ</p>
+              <Link
+                href="/#acerca"
+                className="text-xl md:text-2xl font-bold hover:bg-blend-color"
+              >
+                QUIZ
               </Link>
             </li>
             <li>
-              <button onClick={togglePlayer}>
+              <button onClick={togglePlayer} className="">
                 <svg
                   width="35"
                   height="35"
@@ -56,13 +61,19 @@ const Navbar = ({ togglePlayer }) => {
               </button>
             </li>
             <li>
-              <Link href="/#contacto">
-                <p className="text-2xl font-bold">CONTACTO</p>
+              <Link
+                href="/#contacto"
+                className="text-xl md:text-2xl font-bold hover:bg-blend-color"
+              >
+                CONTACTO
               </Link>
             </li>
             <li>
-              <Link href="/#mas">
-                <p className="text-2xl font-bold">MAS</p>
+              <Link
+                href="/#mas"
+                className="text-xl md:text-2xl font-bold hover:bg-blend-color"
+              >
+                MAS
               </Link>
             </li>
           </ul>

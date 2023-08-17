@@ -3,6 +3,8 @@ import Player from "./components/Player";
 import { songsdata } from "./audio/songs";
 import { useRef, useState, useEffect } from "react";
 import Navbar from "./components/NavBar";
+import Start from "./components/Start";
+import ParticleBackground from "./components/ParticleBackground";
 const Home = () => {
   const [songs, setSongs] = useState(songsdata);
   const [isplaying, setisplaying] = useState(false);
@@ -37,6 +39,8 @@ const Home = () => {
     <div className="home">
       <audio src={currentSong.url} ref={audioElem} onTimeUpdate={onPlaying} />
       <Navbar togglePlayer={togglePlayer} />
+      <ParticleBackground />
+      <Start />
       <Player
         songs={songs}
         setSongs={setSongs}

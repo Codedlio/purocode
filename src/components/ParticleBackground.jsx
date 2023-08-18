@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particlesConfig from "../(config)/particlesConfig";
+import particlesConfig from "../app/(config)/particlesConfig";
 const ParticleBackground = () => {
   const particlesInit = useCallback((engine) => {
     loadFull(engine);

@@ -1,9 +1,9 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 200, // Número de partículas
+      value: 100, // Número de partículas
     },
-    color: ["#3475D7", "#FCF932", "#EC8F21"],
+    color: ["#3475D7", "#FCF932", "#f33b4a"],
     shape: {
       type: "circle", // Tipo de forma de las partículas
       stroke: {
@@ -11,7 +11,7 @@ const particlesConfig = {
         color: "#FCF932", // Color del borde de la forma
       },
       polygon: {
-        nb_sides: 3, // Número de lados del polígono (si es una forma poligonal)
+        nb_sides: 6, // Número de lados del polígono (si es una forma poligonal)
       },
     },
     opacity: {
@@ -39,7 +39,7 @@ const particlesConfig = {
       distance: 100, // Distancia de las conexiones
       color: "#FCF932",
       opacity: 0.9, // Opacidad de las conexiones (líneas)
-      width: 1, // Ancho de las conexiones (líneas)
+      width: 10, // Ancho de las conexiones (líneas)
     },
     move: {
       enable: true, // Movimiento de las partículas

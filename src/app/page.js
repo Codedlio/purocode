@@ -1,10 +1,10 @@
 "use client";
-import Player from "./components/Player";
+import Player from "../components/Player";
 import { songsdata } from "./audio/songs";
 import { useRef, useState, useEffect } from "react";
-import Navbar from "./components/NavBar";
-import Start from "./components/Start";
-import ParticleBackground from "./components/ParticleBackground";
+import Navbar from "../components/NavBar";
+import Start from "../components/Start";
+import ParticleBackground from "../components/ParticleBackground";
 const Home = () => {
   const [songs, setSongs] = useState(songsdata);
   const [isplaying, setisplaying] = useState(false);

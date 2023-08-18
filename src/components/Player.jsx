@@ -58,7 +58,7 @@ const Player = ({
       <AnimatePresence>
         {showPlayer && (
           <motion.div
-            className=" backdrop-blur bg-opacity-75 player_container bg-black text-white p-4  flex flex-col justify-between fixed bottom-0 left-0 w-full "
+            className=" backdrop-blur bg-opacity-75 player_container text-white p-4  flex flex-col justify-between fixed bottom-0 left-0 w-full "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
